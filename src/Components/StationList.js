@@ -5,6 +5,8 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import LoadSkeleton from '../Loading Skeleton/Loading'
 
 
+import styles from './moduleCss/station.module.css'
+
 const Stations = () => {
   const [selectedSlot, setSelectedSlot] = useState({})
   const navigate = useNavigate()
@@ -62,13 +64,13 @@ useEffect(() => {
   };
 
   return(
-    <div className="w-[80%] p-6 flex flex-col justify-center mx-auto ">
+    <div className={`w-[80%] p-6 flex flex-col justify-center mx-auto ${styles.stationStyles} `} >
 
       <StationsHeader />
 
-      <div className="bg-[grey] shadow-md rounded-lg p-5 m-6 space-y-10">
+      <div className="bg-[grey] shadow-md rounded-lg p-5">
 
-        <div className="space-y-50"> 
+        <div > 
 
           { filteredStations.length === 0 ? (
             <div>
@@ -178,7 +180,7 @@ useEffect(() => {
                     ))}
                   </div>
 
-                  <div className="flex justify-between">
+                  <div className={`flex justify-between `} >
 
                     <button
                     className="bg-blue-600 text-black px-4 py-2 hover:bg-blue-700 cursor-pointer rounded-md shadow-md"

@@ -1,6 +1,7 @@
-
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+
+import styles from './moduleCss/bookForm.module.css'
 
 const carType = ['toyota hilux', 'toyota camry', 'honda accord', 'toyota matrix', 'suzuki gsx']
 
@@ -43,11 +44,11 @@ const BookForm = () => {
 
       </section>
 
-      <div className='bg-[white] rounded-2xl shadow-md w-2/4 p-[24px] m-5 space-y-7 md:text-2xl'>
+      <div className='bg-[white] rounded-2xl shadow-md w-2/4 p-[24px] m-5 space-y-7 '>
 
         <div>
 
-        <section className='flex justify-between '>
+        <section className={`flex justify-between ${styles.labelStyle}`}>
 
           <label htmlFor="car" >Select Car Type</label>
 
@@ -78,7 +79,7 @@ const BookForm = () => {
       
         <div >
 
-          <section className='flex justify-between'>
+          <section className={`flex justify-between ${styles.labelStyle}`}>
 
             <label htmlFor="repair">Select Repair Service</label>
 
@@ -109,7 +110,7 @@ const BookForm = () => {
         <div className='flex justify-center'>
 
           <button 
-            className='w-2/4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition cursor-pointer'
+            className={`w-2/4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition cursor-pointer ${styles.labelStyle}`}
             type='submit'
           > Find Stations </button>
 

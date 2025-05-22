@@ -1,0 +1,41 @@
+@media (max-width: 550px) {
+  .successStyle {
+    font-size: 0.8rem
+  }
+
+  .pad{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .successStyle {
+    font-size: 0.6rem
+  }
+
+  .pad{
+    padding: 16px;
+  }
+
+  .paragraph {
+  font-size: 1.2rem
+}
+}
+
+@media (max-width: 420px) {
+  
+
+  .pad{
+    padding: 12px;
+  }
+}
+
+@media (max-width: 348px) {
+    .successStyle {
+    font-size: 0.5rem
+  }
+
+  .pad{
+    padding: 10px;
+  }
+}

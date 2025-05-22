@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom"
 
+import styles from './moduleCss/success.module.css'
+
 const Success = () => {
 
   const { state } = useLocation()
@@ -8,9 +10,9 @@ const Success = () => {
   const { carType, service, stationName, timeSlot, address} = state || {}
  
   return(
-    <div className='flex justify-center items-center flex-col bg-[lightgrey] w-full h-lvh text-[0.4rem] md:text-2xl'>
+    <div className={`flex justify-center items-center flex-col bg-[lightgrey] w-full h-lvh ${styles.successStyle}`}>
 
-      <div className='bg-[white] rounded-2xl shadow-md w-2/4 p-[24px] m-5 space-y-7'>
+      <div className={`bg-[white] rounded-2xl shadow-md w-2/4 p-[24px] m-5 space-y-7 ${styles.pad}`}>
 
         <div className="flex flex-col items-center">
 
@@ -25,7 +27,7 @@ const Success = () => {
 
           </svg>
 
-          <p className="text-2xl font-bold text-green-700">You’re All Set 🚗</p>
+          <p className={`text-2xl font-bold text-green-700 ${styles.paragraph}`}>You’re All Set 🚗</p>
 
         </div>
     

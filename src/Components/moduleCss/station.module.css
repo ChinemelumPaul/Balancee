@@ -1,0 +1,25 @@
+@media (max-width: 550px) {
+  .stationStyles {
+    font-size: 0.8rem;
+    padding: 1rem
+  }
+
+}
+
+@media (max-width: 398px) {
+  .stationStyles {
+    font-size: 0.7rem;
+    padding: 0.8rem
+  }
+
+}
+
+@media (max-width: 368px) {
+  .stationStyles {
+    font-size: 0.6rem;
+    padding: 0.6rem
+  }
+
+}
+
+
