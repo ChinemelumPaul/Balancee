@@ -1,0 +1,33 @@
+[
+
+  {
+    "id": "1",
+    "stationName": "Lekki Garage",
+    "location": "Ikoyi",
+    "rating": 3.8,
+    "servicesOffered": ["oil change", "tire repair"],
+    "supportedCarTypes": ["toyota hilux", "suzuki gsx"],
+    "availableTimeSlot": ["10:00 AM", "11:30 AM", "2:00 PM"]
+  }, 
+
+  {
+    "id": "2",
+    "stationName": "AutoCare Center",
+    "location": "Maryland",
+    "rating": 4.3,
+    "servicesOffered": ["battery check", "paint job"],
+    "supportedCarTypes": ["toyota camry", "toyota matrix"],
+    "availableTimeSlot": ["9:30 AM", "12:30 PM", "3:00 PM"]
+  }, 
+
+  {
+    "id": "3",
+    "stationName": "SpeedyFix Garage",
+    "location": "Rumuola",
+    "rating": 3.5,
+    "servicesOffered": ["tire repair", "swap vehicle"],
+    "supportedCarTypes": ["honda accord", "toyota hilux"],
+    "availableTimeSlot": ["10:15 AM", "1:00 PM", "4:45 PM"]
+  }
+
+]
